@@ -4,7 +4,7 @@ with open('data.txt') as fp:
 #print(d)
 
 d = d.split('\n')
-d.pop(0) # delete first row
+#d.pop(0) # delete first row
 #print(d)
 
 y = []
@@ -25,16 +25,32 @@ while x < len(d):
 
 xc = 3 # start on x coordinate 4
 xx = 3 # second start (every ten times) 
-for r in d:
+"""for r in d:
     if xc <= 31:
         print(xc)
-        print(r[xc])
+        #print(r[xc])
         xc += 3
     elif xc > 31:
         xx -= 1
         xc = xx
-        print(r[xc])
         print("xc is %s en xx is %s" % (xc, xx))
+        """
+
+z = 1
+x = 3
+while z <= 322:
+    while x <= 31:
+        print(z)
+        print(d[z][x])
+        x += 3
+        z += 1
+    x = 2
+    while x <= 31:
+        print(z)
+        print(d[z][x])
+        x += 3
+        z += 1
+
 
 """xc = 4
 yc = 0
